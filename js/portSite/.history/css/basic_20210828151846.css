@@ -1,0 +1,212 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
+
+body{font-family: 'Cutive Mono', monospace;background:; font-size: ;}
+
+#body_wrap{}
+
+header{}
+.header_wrap{}
+    .main_menu{
+        position:fixed;
+        width:100%;
+        z-index: 999;
+    }
+    .main_menu ul{
+        display: block;
+        text-align: center;
+    }
+    .main_menu li{
+        display: inline-block;
+    }
+    .main_menu a{
+        display: block;
+        color:#f0f8ff;
+        height:50px;
+        line-height: 50px;
+        font-size:20px;
+        font-weight:bold;
+        padding:10px 20px
+    }
+
+
+
+main{}
+.main_wrap{}
+.main_wrap section{}
+
+#home{
+    position:relative;
+    background:#0f084d;
+}
+
+#home .bg img{
+    width:100%;
+    background:url('../img/full-moon1.png') no-repeat 50% 40%;
+    background-attachment: fixed;
+}
+
+#home .txt{
+    position:absolute;
+    top:38%;
+    left:50%;
+    transform: translate(-50%);
+    width:400px;
+    height:320px;
+    background:url('../img/logo_y_g.png') no-repeat;
+    background-size:100%;
+}
+#home .txt h1{
+    text-align: center;
+    font-size: 60px;
+    color:#f0f8ff;
+}
+.hide{
+    display: none;
+}
+
+/*  INTRO  */
+#intro{
+    position:relative;
+    background:#000;
+}
+#intro .img ul{
+    position:absolute;
+    top:20%;
+    width:100%;
+    height:500px;
+}
+
+#intro .img li{
+    position:block;
+    width:162px;height:163px;
+}
+
+#intro .img .moon1{
+    position:absolute;
+    bottom:34%;left:9%;
+    opacity: 0;
+}
+#intro .img .moon2{
+    position:absolute;
+    bottom:49%; left:19%;
+    opacity: 0;
+}
+#intro .img .moon3{
+    position:absolute;
+    bottom:57%; left:31%;
+    opacity: 0;
+}
+#intro .img .moon4{
+    position:absolute;
+    top:7%; left:45%;
+    opacity: 0;
+}
+#intro .img .moon5{
+    position:absolute;
+    bottom:57%; right:29%;
+    opacity: 0;
+}
+#intro .img .moon6{
+    position:absolute;
+    bottom:48%; right:18%;
+    opacity: 0;
+}
+#intro .img .moon7{
+    position:absolute;
+    bottom:36%; right:9%;
+    opacity: 0;
+}
+#intro .desc{
+    position:absolute;
+    top:55%;
+    left:50%;
+    transform: translate(-50%);
+    font-size:26px;
+    line-height: 35px;
+    text-align: center;
+    color:#fff;
+    opacity: 0;
+}
+
+
+
+/*  profile  */
+#profile{
+    background:#000 url('../img/myPhoto.jpeg') no-repeat center ;
+    background-size:100%;
+    position:relative;
+}
+input[type="checkbox"] { display:none; }
+label { display:inline-block; vertical-align:middle; cursor:pointer; }
+
+
+#balloon1 {}
+.balloon_la {  position:absolute; width:200px; height:100px;}
+.balloon_la article{ 
+    position:absolute; 
+    width:200px; height:100px; 
+    color:#fff; text-align:center; 
+    transition:0.5s;
+    backface-visibility:hidden; /*3D변환으로 회전된 요소의 뒷면 숨김설정 */ }
+.balloon_la article:nth-of-type(1) { background:#1DA1F2; transform:rotateY(0deg);}
+.balloon_la article:nth-of-type(2) { background:#f35c61; transform:rotateY(180deg); }
+
+#balloon1:checked + .balloon_la article:nth-of-type(1) { transform:rotateY(180deg); }
+#balloon1:checked + .balloon_la article:nth-of-type(2) { transform:rotateY(0deg); }
+
+.balloon_la article:nth-of-type(1):after, .balloon_la article:nth-of-type(2):after{
+    display: block;
+    content:'';
+    width:20px;
+    height:20px;
+
+    position:absolute;
+    top:90px;left:45%;
+    background:#1DA1F2;
+    transform: rotate(45deg);
+}
+.balloon_la article:nth-of-type(1):after{
+    background:#1DA1F2;
+}
+.balloon_la article:nth-of-type(2):after{
+    background:#f35c61;
+}
+
+
+
+/*
+#profile .ballon1{
+    position:absolute;
+    top:44%;left:55%;
+    transform: translate(-50%);
+    width:200px;
+    height:120px;
+    background:#f0f8ff;
+    text-align: center;
+    border-radius: 10%;;
+}
+#profile .ballon1:after{
+    display: block;
+    content:'';
+    height:30px;
+    width:30px;
+    background:#f0f8ff;
+    position:absolute;
+    top:95%;
+    left:50%;
+    transform: rotate(45deg) translate(-50%);
+}
+#profile .ballon1 .desc{
+    border:1px solid red;
+}
+    .desc h2{
+        margin-top:10px;
+    }
+    .desc span{
+        display: block;
+        margin:20px 0;
+    }
+*/
+
+#myWork{}

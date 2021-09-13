@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+
+body{font-family: ; background: ; font-size: ;}
+
+#body_wrap{}
+
+header{}
+.header_wrap{}
+    .main_menu{}
+    .main_menu ul{}
+    .main_menu li{}
+    .main_menu a{}
+
+
+main{}
+.main_wrap{}
+.main_wrap section{}
+
+#home{
+    background:#06013159 url('../img/full-moon.png')no-repeat 100%;
+    background-position: center;
+    background-attachment: fixed;
+}
+#home .bg img{
+    width:100%;
+    height:100%;
+}
+
+
+#profile{}
+#myWork{}

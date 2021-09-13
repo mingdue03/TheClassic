@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+
+body{font-family: ; background: ; font-size: ;}
+
+#body_wrap{}
+
+header{}
+.header_wrap{}
+    .main_menu{
+        position:fixed;
+        width:100%;
+        z-index: 999;
+    }
+    .main_menu ul{
+        display: block;
+        text-align: center;
+    }
+    .main_menu li{
+        display: inline-block;
+    }
+    .main_menu a{
+        display: block;
+        color:#f0f8ff;
+        height:50px;
+        line-height: 50px;
+        font-size:20px;
+        font-weight:bold;
+        padding:10px 20px
+    }
+
+
+
+main{}
+.main_wrap{}
+.main_wrap section{}
+
+#home{
+    position:relative;
+    background:#0f084d;
+}
+#home .bg::before{
+    display: block;
+    content:'';
+    width:322px;
+    height:322px;
+
+    position:absolute;
+    top:30%;
+    left:50%;
+    transform: translate(-50%);
+    background: url('../img/full-moon1.png')no-repeat ;
+    background-attachment: fixed;
+    z-index: 10;
+}
+#home .bg img{
+    width:100%
+}
+#home .text{
+    position:absolute;
+    top:40%;
+    left:50%;
+    transform: translate(-50%);
+    text-align: center;
+    font-size: 60px;
+    color:#f0f8ff;
+}
+
+
+#profile{}
+#myWork{}

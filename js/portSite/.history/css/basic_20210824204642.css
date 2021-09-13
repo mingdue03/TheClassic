@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+
+body{font-family: ; background: ; font-size: ;}
+
+#body_wrap{}
+
+header{}
+.header_wrap{}
+    .main_menu{}
+    .main_menu ul{}
+    .main_menu li{}
+    .main_menu a{}
+
+
+main{}
+.main_wrap{}
+.main_wrap section{}
+
+#home{}
+#profile{}
+#myWork{}

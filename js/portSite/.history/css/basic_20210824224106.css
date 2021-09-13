@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+
+body{font-family: ; background: ; font-size: ;}
+
+#body_wrap{}
+
+header{}
+.header_wrap{}
+    .main_menu{}
+    .main_menu ul{}
+    .main_menu li{}
+    .main_menu a{}
+
+    .main_menu ul:after{
+        display: block;
+        content: '';
+        clear: both;
+    }
+
+main{}
+.main_wrap{}
+.main_wrap section{}
+
+#home{
+    position:relative;
+    background:#0f084d url('../img/full-moon1.png')no-repeat ;
+    background-position: center;
+    background-attachment: fixed;
+}
+#home .bg img{
+    width:100%
+}
+#home .text{
+    position:absolute;
+    top:40%;
+    left:50%;
+    transform: translate(-50%);
+    text-align: center;
+    font-size: 60px;
+    color:#f0f8ff;
+}
+
+
+#profile{}
+#myWork{}

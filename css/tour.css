@@ -1,0 +1,272 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Serif+KR:wght@200;400&display=swap');
+
+body{
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.mainimg{
+    position:relative;
+}
+.mainimg h1{
+    position:absolute;
+    top:40%;
+    left:50%;transform:translate(-50%);
+    font-size:50px;
+    font-family: 'Noto Serif KR', serif;
+    color:#fff;
+}
+.mainimg img{
+    width:100%;
+}
+
+/* INDICATOR */
+
+.indicator{
+    position:fixed;
+    top:26%; right:1%;
+    width:170px;
+}
+.indicator li a{
+    position:relative;
+    width:150px;
+    height:32px;
+    margin-bottom:2px;
+}
+.indicator li a em{
+    position:absolute;
+    right:-150px;top:10px;
+    display: block;
+    width:4px;height:4px;
+    border:2px solid #616683;
+    border-radius: 50%;
+}
+.indicator a span{
+    position:relative;
+    display:block;
+    text-align: center;
+    line-height: 32px;
+    background:rgba(97, 102, 131,0.7);
+    color:#fff;
+    border-radius: 16px;
+    opacity:0;
+    transition:.3s;
+    
+}
+.indicator li a:hover span,.indicator li.on em{
+    opacity:1;
+    background:#616683;
+    text-decoration: none;
+}
+
+
+
+
+
+
+/* SECTION */
+section{
+    width:100%;
+    height:600px;
+    overflow: hidden;
+}
+section:after{
+    display: block;
+    content:'';
+    clear: both;
+}
+.tourimg_left{
+    float:left;
+    width:60%; height:100%;
+    max-width:1200px;
+    background-size: 100%;
+}
+.tourdesc {
+    width:30%;
+    margin-left:2vw;
+    margin-right:2vw;
+    padding-top:4vw;}
+.tourdesc_right{
+    float:left;
+    text-align:left;
+}
+.tourimg_right{
+    float:right;
+    width:60%; height:100%;
+    max-width:1200px;
+    background-size: 100%;
+}
+.tourdesc_left{
+    float:right;
+    text-align:right;
+}
+.tourdesc .adress{
+    color:#555
+}
+.tourdesc a{
+    color:#5965a8
+}
+.tourdesc a:hover{
+    text-decoration: underline;
+}
+.tourdesc h3{
+    color:#616683;
+    font-family: 'Noto Serif KR', serif;
+    margin:30px 0;
+    font-size:30px;
+}
+.tourdesc h3:after{
+    display: block;
+    content:'';
+    margin-top:12px;
+    width:100%;
+    height:1px;
+    background:#616683;
+}
+.tourdesc_right p, .tourdesc_left p{
+    padding:10px 0;
+    line-height: 20px;
+}
+.tour1{
+    background:url('../img/tour/1.jpg')no-repeat center;
+}
+.tour2{
+    background:url('../img/tour/2.jpg')no-repeat center;
+}
+.tour3{
+    background:url('../img/tour/3.jpg')no-repeat center;
+}
+.tour4{
+    background:url('../img/tour/4.jpg')no-repeat center;
+}
+.tour5{
+    background:url('../img/tour/5.jpg')no-repeat center;
+}
+.tour6{
+    background:url('../img/tour/6.jpg')no-repeat center;
+}
+.tour7{
+    background:url('../img/tour/7.jpg')no-repeat center;
+}
+.tour8{
+    background:url('../img/tour/8.jpg')no-repeat center;
+}
+.tour9{
+    background:url('../img/tour/9.jpg')no-repeat center;
+}
+.tour10{
+    background:url('../img/tour/10.jpg')no-repeat center;
+}
+.tour11{
+    background:url('../img/tour/11.jpg')no-repeat center;
+}
+.tour12{
+    background:url('../img/tour/12.jpg')no-repeat center;
+}
+.tour13{
+    background:url('../img/tour/13.jpg')no-repeat center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:920px){
+    section{
+        height:400px;
+    }
+    .tourimg_left{
+        width:50%; 
+        background-size: cover;
+    }
+    .tourdesc_right{
+        width:40%;
+        padding-top:1vw;
+    }
+    .tourdesc_right h3,.tourdesc_left h3{
+        margin:30px 0;
+    }
+    .tourimg_right{
+        width:50%;
+        background-size: cover;
+    }
+    .tourdesc_left{
+        width:40%;
+        padding-top:1vw;
+    }
+
+    
+}
+
+
+
+
+@media(max-width:720px){
+
+    .mainimg h1{
+        font-size: 5vw;
+    }
+
+
+    section{
+        height:800px;
+    }
+    .tourdesc{
+        text-align: center;
+        padding:0 20px;
+        float:none;
+        width:90%;
+        height: 50%;
+        padding-top:1vw;
+    }
+
+    .tourimg_left{
+        float:none;
+        width:100%; 
+        height: 50%;
+        background-size: cover;
+    }
+    .tourdesc h3{
+        margin:30px 0;
+    }
+    .tourimg_right{
+        float:none;
+        width:100%;
+        height: 50%;
+        background-size: cover;
+    }
+    
+
+
+
+}
+@media(max-width:560px){
+
+    .mainimg{
+        height:700px;
+        overflow: hidden;
+    }
+    .mainimg h1{
+        top:45%;
+        font-size:30px;
+    }
+    .mainimg img{
+        width:260%;
+        margin-left:-120%;
+    }
+}
